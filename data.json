@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "name",
+      "description": "description",
+      "technologies": ["HTML", "CSS", "JavaScript", "ES6"],
+      "live_link": "this is a link to the hosted page",
+      "github_link": "this link to the repository",
+      "image_urls": ["image link", "image link"]
+    }
+  ]
+}
