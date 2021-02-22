@@ -1,9 +1,10 @@
 const { Router } = require("express");
 const router = Router();
-const data = require("../data.json");
+const { projects } = require("../data.json");
 
 router.get("/:id", (req, res, next) => {
-  res.render("project", {});
+  res.locals = projects[0];
+  res.render("project");
 });
 
 module.exports = router;
