@@ -22,7 +22,9 @@ app.use((err, req, res, next) => {
   const message = err.message || "Internal server error";
   const status = err.status || 500;
   res.status(status);
-  res.render("error", { message, status });
+  res.locals = { message, status };
+  if (status === 404) return res.render("page-not-found");
+  res.render("error");
 });
 
 const port = process.env.PORT || 3000;
