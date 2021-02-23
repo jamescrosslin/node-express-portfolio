@@ -8,9 +8,7 @@ router.get("/:id", (req, res, next) => {
     res.locals = projects[+id];
     return res.render("project");
   }
-  const err = new Error("Sorry, that project does not exist.");
-  err.status = 404;
-  next(err);
+  next();
 });
 
 module.exports = router;

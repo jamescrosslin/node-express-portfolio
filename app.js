@@ -13,9 +13,16 @@ const projects = require("./routes/projects");
 app.use("/projects", projects);
 
 app.use((req, res, next) => {
-  const err = new Error("Sorry, the page you're looking for doesn't exist.");
+  const err = new Error("Sorry, the page you're looking for doesn't exist");
   err.status = 404;
   next(err);
+});
+
+app.use((err, req, res, next) => {
+  const message = err.message || "Internal server error";
+  const status = err.status || 500;
+  res.status(status);
+  res.render("error", { message, status });
 });
 
 const port = process.env.PORT || 3000;
