@@ -2,12 +2,103 @@
   "projects": [
     {
       "id": 0,
-      "project_name": "name",
-      "description": "description",
+      "project_name": "Flashy",
+      "description": "A flash card app to help you study. Hosted on Heroku, so give it a second to spin up.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ES6",
+        "Node",
+        "Express",
+        "Pug",
+        "npm"
+      ],
+      "live_link": "https://thflashcards.herokuapp.com/hello",
+      "github_link": "https://github.com/jamescrosslin/flashcardApp",
+      "image_urls": ["flashy-main.jpg", "flashy-1.jpg", "flashy-2.jpg"]
+    },
+    {
+      "id": 1,
+      "project_name": "RSVP",
+      "description": "An app that keeps track of your RSVPs",
+      "technologies": ["HTML", "CSS", "JavaScript", "ES6", "localStorage"],
+      "live_link": "https://myrsvp.netlify.app",
+      "github_link": "https://github.com/jamescrosslin/RSVP-app",
+      "image_urls": ["rsvp-main.jpg", "rsvp-1.jpg", "rsvp-2.jpg", "rsvp-3.jpg"]
+    },
+    {
+      "id": 2,
+      "project_name": "JS Galaxy Convention Registration Form",
+      "description": "A custom convention registration form with hand-made validation.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ES6",
+        "Regular Expressions"
+      ],
+      "live_link": "https://jsformdemo.netlify.app",
+      "github_link": "https://github.com/jamescrosslin/Conference-Registration-Form",
+      "image_urls": [
+        "js-galaxy-main.png",
+        "js-galaxy-1.jpg",
+        "js-galaxy-2.jpg",
+        "js-galaxy-3.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "project_name": "Phrasehunter",
+      "description": "A phrase guessing game that can be interacted with via a mouse or a keyboard. Try to guess the phrase before you run out of lives!",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ES6",
+        "CSS Libraries",
+        "Object Oriented Programming"
+      ],
+      "live_link": "https://jsgalaxy.netlify.app",
+      "github_link": "https://github.com/jamescrosslin/Conference-Registration-Form",
+      "image_urls": [
+        "phrasehunter-main.jpg",
+        "phrasehunter-1.jpg",
+        "phrasehunter-1.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "project_name": "Quoteful",
+      "description": "An app that displays quotes and citations with entry and exit fading animations.",
       "technologies": ["HTML", "CSS", "JavaScript", "ES6"],
-      "live_link": "this is a link to the hosted page",
-      "github_link": "this link to the repository",
-      "image_urls": ["image link", "image link"]
+      "live_link": "https://quoteful.netlify.app",
+      "github_link": "https://github.com/jamescrosslin/Random-Quote-Generator",
+      "image_urls": ["quoteful-main.jpg", "quoteful-1.jpg", "quoteful-2.jpg"]
+    },
+    {
+      "id": 6,
+      "project_name": "Quoteful Employee Directory",
+      "description": "Uses web API endpoint to draw random user data and display it for user interaction. Click an employee card to bring up a modal!",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ES6",
+        "Object Oriented Programming"
+      ],
+      "live_link": "https://quoteful-employees.netlify.app",
+      "github_link": "https://github.com/jamescrosslin/Employee-API",
+      "image_urls": ["directory-main.png", "directory-1.jpg"]
+    },
+    {
+      "id": 4,
+      "project_name": "Northern Valley Business Academy Student Directory",
+      "description": "This is a student directory for the Northern Valley Business Academy. Student data is paginated for user readability.",
+      "technologies": ["HTML", "CSS", "JavaScript", "ES6"],
+      "live_link": "https://ps-directory.netlify.app",
+      "github_link": "https://github.com/mightykrakyn/paginated-student-directory",
+      "image_urls": ["nvba-main.jpg", "nvba-1.jpg", "nvba-2.jpg"]
     }
   ]
 }
