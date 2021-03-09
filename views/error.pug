@@ -1,4 +1,17 @@
 extends layout
 
 block content 
-  h2= `${status} - ${message}`
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+  .error-block
+    h2.error= `${status} - ${message}`
+    figure 
+      img.error-img(src="/static/images/general-error.svg", alt="Cute animated drawing of two developers hunting literal bugs on a monitor of gears")
+      figcaption
+        a(href="http://storyset.com/web", target="_blank", rel="noopener noreferrer") Illustration by Freepik Storyset
+    br
+    p This error is logged and our developers are working hard to correct this issue. Try again or return to the  
+      a(href="/") home page
+      span .

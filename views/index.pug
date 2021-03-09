@@ -4,22 +4,19 @@ block content
 
   article.portfolio-intro
     h1 Let's create amazing software together!
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Hello recruiter, web developer, friend/family, or random person who stumbled upon my portfolio! This is a showcase for my Full Stack Javascript work! Each of these projects was created with love, care, and more than a little loss of hair. I hope you enjoy, and head on over to my 
+    p Hello recruiter, web developer, friend/family, or random person who stumbled upon my portfolio! This is a showcase for my Full Stack Javascript work! Each of these projects was created with love, care, and more than a little loss of hair. If you enjoy my work, head on over to my 
       a(href="/about") about me 
       span page to learn why knowing or hiring me would be a great idea!
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
+      //- loop through all served projects
       each project in projects
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
-
         .cell
           a(href=`/projects/${project.id}`)
+            //- preview image for each project
             img.thumbnail(src=`/static/images/${project.image_urls[0]}`, alt=`Thumbnail-${project.project_name}`)
+            //- project title
             h5 #{project.project_name}
 

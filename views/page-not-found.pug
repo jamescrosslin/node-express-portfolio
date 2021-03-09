@@ -1,5 +1,17 @@
 extends layout
 
 block content 
-  h2= `${status} - ${message}`
-  p But this is also the page-not-found error handler, so yeah.
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+  .error-block
+    h2.error= `${status} - ${message}`
+    figure 
+      img.error-img(src="/static/images/not-found.svg", alt="A woman sitting on top of 404 block letters")
+      figcaption
+        a(href="http://storyset.com/web", target="_blank", rel="noopener noreferrer") Illustration by Freepik Storyset
+    br
+    p It's a shame when this happens, but we can't find the page you're looking for. Please check your address again or return to the 
+      a(href="/") home page
+      span .
