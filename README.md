@@ -25,6 +25,6 @@ To start the program, in your command line type:
 
 ###Style features
 
-* The fadeInLeft animation brings the developer info into the screen from the left side.  
+* The fadeInRight animation brings the developer info into the screen from the left and comes to a rest in the aside.  
 
 * The color palette can easily be changed from the `:root` pseudo-selector, and many attributes including background color, text color, link color, and box shadows have their values set using the `:root` variables.
