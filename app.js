@@ -7,9 +7,7 @@ const app = express();
 app.set("view engine", "pug");
 app.use("/static", express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-  throw new Error()
-});
+app.get("/", (req, res) => res.render("index", projects));
 app.get("/about", (req, res) => res.render("about"));
 
 //project data
@@ -33,6 +31,7 @@ app.use((err, req, res, next) => {
   res.status(status);
   res.locals = { message, status };
   if (status === 404) return res.render("page-not-found");
+  console.error(err)
   res.render("error");
 });
 
